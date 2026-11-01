@@ -1,0 +1,175 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0 ;
+    background-image: url('imagens/papel-de-parede.jpg');
+	background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #222;
+}
+
+header {
+    background-color: #1e1e52;
+    color: white;
+    text-align: left;
+    padding: 20px 60px;
+}
+
+nav{
+	position: absolute;
+	top: 55px;
+	right: 90px;
+}
+
+nav li{
+	display: inline;
+	margin: 0 0 0 15px;
+}
+
+nav a{
+	text-decoration: none; /*remove o sublinhado*/
+	color: #000000;
+	font-size: 18px;
+	font-weight: bold; /*negrito*/
+	text-transform: uppercase;
+}
+
+nav a:hover {
+    color: orange;
+    text-decoration: underline;
+}
+
+
+main {
+    max-width: 940px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+}
+
+.sobre {
+    display: flex;
+    align-items: center; /* Alinha os dois verticalmente pelo meio */
+    gap: 20px;           /* Cria um espaço de 20px entre a foto e o texto */
+    margin-bottom: 25px; /* Afasta essa parte dos títulos de baixo */
+}
+
+/* Controla o tamanho da imagem para ela não esmagar o texto */
+.sobre img {
+    max-width: 45%;      /* A imagem vai ocupar quase metade do espaço */
+    height: auto;
+}
+
+/* Controla o tamanho do texto ao lado da imagem */
+.sobre div {
+    flex: 1;             /* Faz o texto ocupar o restante do espaço disponível */
+}
+
+.produtos{
+	display: flex;
+	width: 940px;
+	margin: 5px 3px;
+	padding: 50px 0px; /*50px cima e baixo e 0 para lados*/
+}
+
+
+.produtos li{
+	display: inline-block;
+	text-align: center;
+	width: 300px;
+	height: center;
+	vertical-align: sub;
+	background: #CCCCCC;
+	margin: 0 0.5%; /*0px cima e baixo e 1.5% para os lados*/
+	padding: 20px 2px; /*30px cima e baixo e 20px lados*/
+	box-sizing: border-box; /*considera o espaçamento interno (padding)
+					como parte do width que é a largura fixa, assim não
+					desconfigura quando o usa o padding com px e % */
+
+	/*Trabalhando com bordas*/
+	border-style: solid; /*solid, dashed, dotted*/
+	border-width: 2px;
+	border-color: #000000;
+	border-radius: 10px;
+
+}
+
+.produtos li:hover {
+	border-color: #C78C19;
+	/*font-size: 40px; não acontece o que se espera pois outros estilos estão definidos*/
+}
+/*#088C19;*/
+.produtos li:active { /*Comportamento quando o mouse está sendo kicado*/
+	border-color: #fc0fc0 ;
+
+}
+
+.produtos h2{
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.produtos-img{
+	border-radius: 200px;
+	width: 270px;
+    height: 300px;
+}
+
+
+
+.produto-descricao {
+	font-size: 18px;
+}
+
+.produto-preco {
+	font-size: 22px;
+	font-weight: bold;
+	margin: 10px 0 0;/*10px cima, 0 baixo, 0 lados	*/
+	/*margin-top: 10px; */
+}
+
+
+.produtos li:hover h2{
+	font-size: 34px;	
+}
+
+.produtos-img {
+	border-radius: 10px;
+}
+
+h2 {
+    color: #ff007f;
+}
+
+p, li {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.botao {
+    display: inline-block;
+    background-color: #8b4513;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.botao:hover {
+    background-color: #5c2e0b;
+}
+
+li a {
+    color: #d86c00;
+    text-decoration: none;
+}
+
+footer {
+    background-color: #1e1e52;
+    padding: 30px 0; 
+    color:white;
+    font-size: 18px;
+    text-align: center;
+}
